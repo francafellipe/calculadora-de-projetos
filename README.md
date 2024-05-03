@@ -4,12 +4,12 @@ Para resolver o problema em que os dias eram atualizados abaixo da barra de rola
 
 #HTML
 
-<span>
+'''<span>
     <label id="durationLabel" for="projectDuration">Duração do Projeto em Dias: </label>
     <span id="projectDurationValue">5 dias</span>
 </span>
 <input type="range" id="projectDuration" min="1" max="30" value="5" oninput="displayValue('projectDurationValue', this.value + (document.getElementById('timeOption').value === 'months' ? ' meses' : ' dias')); calculateProjectCost();">
-
+'''
 Agora o <span> para a duração do projeto está posicionado corretamente e exibe a duração conforme o usuário ajusta o controle deslizante.
 
 ## 2. Resolvendo o Problema do ‘NaN’
